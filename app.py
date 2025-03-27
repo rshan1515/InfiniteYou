@@ -292,3 +292,23 @@ prepare_pipeline(model_version=ModelVersion.DEFAULT_VERSION, enable_realism=ENAB
 demo.queue()
 demo.launch(server_name='0.0.0.0')  # IPv4
 # demo.launch(server_name='[::]')  # IPv6
+
+# To install and run the project, follow these steps:
+# 
+# * Ensure you have Python installed on your system.
+# * Clone the repository to your local machine.
+# * Navigate to the root directory of the repository.
+# * Install the required dependencies by running:
+#   ```bash
+#   pip install -r requirements.txt
+#   ```
+# * Download the required models by running the `download_models()` function in `app.py`.
+# * To run the local inference script, use the following command:
+#   ```bash
+#   python test.py --id_image ./assets/examples/yann-lecun_resize.jpg --prompt "A man, portrait, cinematic" --out_results_dir ./results
+#   ```
+# * To launch the local Gradio demo, run:
+#   ```bash
+#   python app.py
+#   ```
+# * For more details on the arguments and options, refer to the comments and documentation in `test.py` and `app.py`.
